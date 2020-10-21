@@ -51,9 +51,6 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
   var slideDown = document.querySelector('.slide-down');
   var slideToggle = document.querySelector('.main-content__slide-down__button');
-  var popupDown = document.querySelector('.popup');
-  var popupToggle = document.querySelector('.nav__user-in__text');
-  var popupClosed = document.querySelector('.popup__button');
   slideToggle.addEventListener('click', function () {
     if (slideDown.classList.contains('slide-down--closed')) {
       slideDown.classList.remove('slide-down--closed');
@@ -67,6 +64,15 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       slideToggle.classList.remove('main-content__slide-down__button--opened');
     }
   });
+})();
+"use strict";
+
+(function () {
+  'use script';
+
+  var popupDown = document.querySelector('.popup');
+  var popupToggle = document.querySelector('.nav__user-in__text');
+  var popupClosed = document.querySelector('.popup__button');
   popupToggle.addEventListener('click', function () {
     if (popupDown.classList.contains('popup--closed')) {
       popupDown.classList.remove('popup--closed');
