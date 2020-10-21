@@ -1,0 +1,94 @@
+.slide-down {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+.slide-down--open {
+  opacity: 1;  
+}
+
+.slide-down--closed {
+  display: none;
+}
+
+
+.main-content__slide-down__button {
+  width: 87px;
+  height: 28px;
+  margin: 0 auto;
+  border: none;
+  background-color: #fff;
+  margin-bottom: -1px;
+  cursor: pointer;
+
+}
+
+.main-content__slide-down__button--closed {
+  background-image: url(../../img/open.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-content__slide-down__button--opened {
+  background-image: url(../../img/closed.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-content__slide-down__button:hover {
+  border: none;
+}
+
+.main-content__slide-down__button:focus {
+  border: none;
+  outline: none;
+}
+
+
+.slide-down__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slide-down__block:nth-child(1) {
+  background-color: @beige-color;
+  color: @black-color;
+}
+
+.slide-down__block:nth-child(2) {
+  background-color: @wtite-color;
+  color: @black-color;
+}
+
+.slide-down__block:nth-child(3) {
+  background-color: @black-color;
+}
+
+.slide-down__block__heading {
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  font-size: 28px;
+  margin: 0;
+  padding: 16px 13px;
+}
+
+.slide-down__block__text {
+  margin: 0;
+  padding: 2px 13px;
+  font-size: 16px;
+}
+
+.slide-down__block__link {
+  margin: 0;
+  padding-right: 20px;
+  padding: 10px 21px 10px 13px;
+  text-align: right;
+  font-size: 18px;
+}
+
+.slide-down__block:nth-child(1)
+.slide-down__block__link {
+  color: @wtite-color;
+}

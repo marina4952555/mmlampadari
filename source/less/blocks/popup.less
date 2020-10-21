@@ -1,0 +1,87 @@
+.popup {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: 20;
+  background: rgba(225,225,225,.6)
+}
+
+.popup--closed {
+  display: none;
+}
+
+.popup__button {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  z-index: 2;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.popup__button::before,
+.popup__button::after {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: -2px;
+
+  width: 28px;
+  height: 2px;
+
+  background-color: #fff;
+}
+
+.popup__button::before {
+  transform: rotate(45deg);
+}
+
+.popup__button::after {
+  transform: rotate(-45deg);
+}
+
+.popup__button:hover {
+  opacity: 0.8;
+}
+
+.popup__button:focus {
+  outline: none;
+}
+
+.popup__heading {
+  margin: 0;
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 24px;
+  padding-top: 7px;
+  text-align: center;
+}
+
+.popup__form {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 35px;
+}
+
+.popup__form__container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 12px;
+  padding: 0 38px 24px;
+}
+
+.popup__container {
+  position: fixed;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: @gray-color;
+}

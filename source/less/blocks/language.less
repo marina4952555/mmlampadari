@@ -1,0 +1,26 @@
+.language {
+  display: flex;
+  font-family: 'Open Sans';
+  font-size: 14px;
+
+  height: 14px;
+}
+
+.language__item {
+  line-height: 14px;
+  text-transform: uppercase;
+  padding: 0 9px;
+}
+
+.language__item:not(:first-child) {
+  border-left: @wtite-color 1px solid;  
+}
+
+.language__item__link {
+  color: @wtite-color;
+  transition: all 0.3s;
+}
+
+.language__item__link:hover {
+  color: @beige-color;
+}

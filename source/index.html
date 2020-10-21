@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="mmlampadari">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <title>mmlampadari</title>
+</head>
+<body>
+  <header class="header">
+    <img class="header__logo" src="img/logo.png" width="283" height="83" alt="Логотип сайта">
+    <nav class="header__nav nav">
+      <div class="nav__user-in">
+        <span class="nav__user-in__text">Area resirvata</span>
+      </div>
+      <ul class="nav__list">
+        <li class="nav__item nav__item">
+          <a class="nav__item__link nav__item__link--active">Home</a>
+        </li>
+        <li class="nav__item inside">
+          <a class="nav__item__link">Azienda</a>
+          <ul class="inside__list">
+            <li class="inside__item">
+              <a class="inside__item__link">Storia</a>
+            </li>
+            <li class="inside__item">
+              <a class="inside__item__link">MM Design</a>
+            </li>
+            <li class="inside__item">
+              <a class="inside__item__link">Designer</a>
+            </li>
+            <li class="inside__item">
+              <a class="inside__item__link">Certificazioni</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a class="nav__item__link">Collezioni</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__item__link">News</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__item__link">Contatti</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-content main-content--bg-2">
+    <h1 class="visually-hidden">Сайт компании mm lampadari</h1>
+    <div class="main-content__slidere">
+    </div>
+    <div class="main-content__block">
+      <h2 class="main-content__block__heading">Lampadari contemporanei</h2>
+      <p class="main-content__block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore </p>
+    </div>
+    <div class="main-content__slider-img">
+      <label class="slider-img">
+        <input class="main-content__slider-btn" name="slider-img" type="radio" value="1">
+        <input class="main-content__slider-btn" name="slider-img" type="radio" value="2" checked>
+        <input class="main-content__slider-btn" name="slider-img" type="radio" value="3">
+      </label>
+    </div>
+    <div class="main-content__slide-down">
+      <button class="main-content__slide-down__button main-content__slide-down__button--closed"  alt="Открытие и закрытие окна"></button>
+      <ul class="main-content__slide-down__content slide-down slide-down--closed">
+        <li class="slide-down__block">
+          <h3 class="slide-down__block__heading">Stai pensando ad un progetto?</h3>
+          <p class="slide-down__block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore </p>
+          <a class="slide-down__block__link">Approfondisci</a>
+        </li>
+        <li class="slide-down__block">
+          <h3 class="slide-down__block__heading">Vi aspettiamo alla fiera Euroluce</h3>
+          <p class="slide-down__block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore </p>
+          <a class="slide-down__block__link">Approfondisci</a>
+        </li>
+        <li class="slide-down__block">
+          <h3 class="slide-down__block__heading">Scopri la nuova collezione</h3>
+          <p class="slide-down__block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore</p>
+          <a class="slide-down__block__link">Approfondisci</a>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <div class="popup popup--closed">
+    <div class="popup__container">
+      <button class="popup__button" alt="Закрыть окно авторицации и регистрации"></button>
+      <h2 class="popup__heading">AREA RISERVATA</h2>
+      <div class="popup__form__container">
+        <form class="popup__form form">
+          <legend class="form__legend">ACCEDI</legend>
+          <label>
+            <input type="text" class="form__email" placeholder="Email">
+          </label>
+          <label>
+            <input type="text" class="form__password" placeholder="Password">
+          </label>
+          <button class="form__button form__button__form" type="submit">ACCEDI</button>
+          <p></p>
+        </form>
+        <form class="popup__form form">
+          <legend class="form__legend form__legend__registration">REGISTRATI</legend>
+          <label>
+            <input type="text" class="form__name" placeholder="Nome">
+          </label>
+          <label>
+            <input type="text" class="form__cognome" placeholder="Cognome">
+          </label>
+          <label>
+            <input type="text" class="form__email" placeholder="Email">
+          </label>
+          <label>
+            <input type="text" class="form__password" placeholder="Password">
+          </label>
+          <label class="form__check__text">
+            <input class="form__check" type="checkbox">Acconsento al trattamento dei dati</input>
+          </label>
+          <label class="form__check__text">
+            <input class="form__check" type="checkbox">Mi iscrivo alla Newsletter</input>
+          </label>
+          <button class="form__button form__button__form" type="submit">ISCRIVITI</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__top__block">
+        <h4 class="footer__top__block__heading">Lampadari made in italy</h4>
+        <p class="footer__top__block__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  
+        </p>
+      </div>
+      <div class="footer__top__block">
+        <h4 class="footer__top__block__heading">lampadari artigianali</h4>
+        <p class="footer__top__block__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  
+        </p>
+      </div>
+      <div class="footer__top__block">
+        <h4 class="footer__top__block__heading">45 anni di esperienza</h4>
+        <p class="footer__top__block__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  
+        </p>
+      </div>
+      <div class="footer__top__block">
+        <h4 class="footer__top__block__heading">NEWSLETTER</h4>
+        <form class="footer__top__block__form form">
+          <label>
+            <input type="text" class="form__name" placeholder="Nome e Cognome">
+          </label>
+          <label>
+            <input type="text" class="form__email" placeholder="Email">
+          </label>
+          <label class="form__check__text">
+            <input class="form__check" type="checkbox">Acconsento al trattamento dei dati</input>
+          </label>
+          <br>
+          <button class="form__button" type="submit">ISCRIVITI</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <ul class="footer__bottom__info info">
+        <li class="info__item">
+          <a class="info__item__link" href="#">MMLAMPADARI srl</a></li>
+        <li class="info__item">
+          <a class="info__item__link" href="#">Via Feltrina 0</a>0</li>
+        <li class="info__item">
+          <a class="info__item__link" href="#">31111 Pederobba (TV)</a></li>
+        <li class="info__item">
+          <a class="info__item__link" href="#">0423.123456</a></li>
+        <li class="info__item">
+          <a class="info__item__link" href="mailto:info@mmlampadari.mm">info@mmlampadari.mm</a>
+        </li>
+        <li class="info__item">
+          <a class="info__item__link" href="#">P.IVA 04123456789</a></li>
+      </ul>
+      <ul class="footer__bottom__social social">
+        <li class="social__item">
+          <a class="social__item__link" href="#">
+            <img src="img/f.png" width="18" height="18" alt="Страница нашей компании в facebook">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__item__link" href="#">
+            <img src="img/inst.png" width="18" height="18" alt="Страница нашей компании в instagram">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__item__link" href="#">
+            <img src="img/pint.png" width="13" height="18" alt="Страница нашей компании в pinterest">
+          </a>
+        </li>
+      </ul>
+      <ul class="footer__bottom__language language">
+        <li class="language__item">
+          <a class="language__item__link" href="#">Ita</a>
+        </li>
+        <li class="language__item">
+          <a class="language__item__link" href="#">Eng</a>
+        </li>
+        <li class="language__item">
+          <a class="language__item__link" href="#">Deu</a>
+        </li>
+        <li class="language__item">
+          <a class="language__item__link" href="#">Рус</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="js/all.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.inside {
+  position: relative;
+}
+
+.inside:hover .inside__list{
+  display: block;
+
+}
+
+.inside__list {
+  display: none;
+  position: absolute;
+  left: 15px;
+  background-color: @gray-color;
+}
+
+.inside__item {
+  padding: 3px 7px;
+  transition: all 0.3s;
+  font-size: 16px;
+}
+
+.inside__item:first-child {
+  padding-top: 30px;
+}
+
+.inside__item:last-child {
+  padding-bottom: 10px;
+}
+
+.inside__item:hover {
+  color: @beige-color;
+  text-shadow: 0 0 .8px @beige-color, 0 0 .8px @beige-color;
+  // font-weight: 600;
+}
+
+.inside__item:not(:first-child) {
+  border-top: @wtite-color 1px solid;  
+}
